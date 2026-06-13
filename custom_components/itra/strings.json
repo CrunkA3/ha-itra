@@ -35,5 +35,15 @@
         }
       }
     }
+  },
+  "entity": {
+    "sensor": {
+      "itra_level_count": {
+        "name": "ITRA index"
+      },
+      "itra_performance_level": {
+        "name": "Performance level"
+      }
+    }
   }
 }
