@@ -20,7 +20,6 @@ from .const import (
 from .coordinator import ItraDataUpdateCoordinator
 
 
-
 async def async_setup_entry(
     hass: HomeAssistant,
     entry: ConfigEntry,

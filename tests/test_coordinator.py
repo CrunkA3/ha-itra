@@ -1,7 +1,8 @@
-"""Unit tests for the ITRA coordinator HTML parser."""
+"""Unit tests for the ITRA parser (parse_itra_html)."""
 
 # ---------------------------------------------------------------------------
-# We test _parse_html as a pure function without any HA machinery.
+# We test parse_itra_html from custom_components/itra/parser.py as a pure
+# function without any HA machinery.
 # BeautifulSoup is the only external dependency needed here.
 # ---------------------------------------------------------------------------
 
