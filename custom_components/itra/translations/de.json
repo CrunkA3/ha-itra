@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ITRA Runner einrichten",
+        "description": "Gib die öffentliche ITRA-RunnerSpace-Profil-URL und das Abfrageintervall ein.",
+        "data": {
+          "runner_url": "Runner-URL",
+          "update_interval": "Aktualisierungsintervall (Sekunden)",
+          "user_agent": "User-Agent (optional)"
+        },
+        "data_description": {
+          "runner_url": "Vollständige URL zum ITRA-RunnerSpace-Profil, z. B. https://itra.run/RunnerSpace/benutzername.123",
+          "update_interval": "Wie oft die ITRA-Seite abgefragt werden soll (Minimum 10800 s = 3 h, Standard 14400 s = 4 h).",
+          "user_agent": "Eigener HTTP-User-Agent-Header. Leer lassen, um den Standard zu verwenden."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Die URL muss mit https://itra.run/RunnerSpace/ beginnen.",
+      "cannot_connect": "Die ITRA-Seite ist nicht erreichbar. URL und Netzwerkverbindung prüfen.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten."
+    },
+    "abort": {
+      "already_configured": "Dieser ITRA-Läufer ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ITRA Optionen",
+        "data": {
+          "update_interval": "Aktualisierungsintervall (Sekunden)",
+          "user_agent": "User-Agent (optional)"
+        }
+      }
+    }
+  }
+}
