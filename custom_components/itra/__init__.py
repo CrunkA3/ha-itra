@@ -1,12 +1,10 @@
 """The ITRA integration."""
 from __future__ import annotations
 
-import logging
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
-from homeassistant.exceptions import ConfigEntryNotReady
 
 from .const import (
     CONF_RUNNER_URL,
@@ -17,7 +15,6 @@ from .const import (
 )
 from .coordinator import ItraDataUpdateCoordinator
 
-_LOGGER = logging.getLogger(__name__)
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
 
