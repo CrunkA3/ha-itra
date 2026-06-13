@@ -1,5 +1,4 @@
 """Unit tests for the ITRA coordinator HTML parser."""
-import pytest
 
 # ---------------------------------------------------------------------------
 # We test _parse_html as a pure function without any HA machinery.
