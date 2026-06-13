@@ -54,17 +54,9 @@ avoid putting unnecessary load on their servers.  Please be a polite consumer.
 | Update interval | Polling interval in seconds (min 10 800 = 3 h) | `14400` |
 | User-Agent | Custom HTTP User-Agent (optional) | _(leave empty for default)_ |
 
-### Via YAML (optional, legacy)
+### Via YAML
 
-```yaml
-# configuration.yaml
-itra:
-  runner_url: "https://itra.run/RunnerSpace/rohrhirsch.michael.5685748"
-  update_interval: 14400
-```
-
-> YAML-based setup is not the primary supported method.  Use the UI flow for
-> new installations.
+YAML-based setup is not supported for this integration. Please use the UI (Config Flow) to configure the runner URL and polling interval.
 
 ---
 
