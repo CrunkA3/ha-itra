@@ -1,7 +1,6 @@
 """Sensor platform for the ITRA integration."""
 from __future__ import annotations
 
-import logging
 from typing import Any
 
 from homeassistant.components.sensor import SensorEntity, SensorStateClass
@@ -20,7 +19,6 @@ from .const import (
 )
 from .coordinator import ItraDataUpdateCoordinator
 
-_LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(
