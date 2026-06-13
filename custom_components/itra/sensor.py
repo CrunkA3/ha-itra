@@ -52,7 +52,7 @@ class _ItraBaseSensor(CoordinatorEntity[ItraDataUpdateCoordinator], SensorEntity
         translation_key: str,
         icon: str,
     ) -> None:
-        """Initialise the sensor."""
+        """Initialize the sensor."""
         super().__init__(coordinator)
         self._entry = entry
         self._sensor_key = sensor_key
@@ -81,7 +81,7 @@ class ItraLevelCountSensor(_ItraBaseSensor):
         coordinator: ItraDataUpdateCoordinator,
         entry: ConfigEntry,
     ) -> None:
-        """Initialise the ITRA index sensor."""
+        """Initialize the ITRA index sensor."""
         super().__init__(
             coordinator=coordinator,
             entry=entry,
@@ -111,7 +111,7 @@ class ItraPerformanceLevelSensor(_ItraBaseSensor):
         coordinator: ItraDataUpdateCoordinator,
         entry: ConfigEntry,
     ) -> None:
-        """Initialise the performance-level sensor."""
+        """Initialize the performance-level sensor."""
         super().__init__(
             coordinator=coordinator,
             entry=entry,

@@ -31,7 +31,7 @@ class ItraDataUpdateCoordinator(DataUpdateCoordinator[dict[str, Any]]):
         update_interval_seconds: int = DEFAULT_UPDATE_INTERVAL,
         user_agent: str = "",
     ) -> None:
-        """Initialise the coordinator."""
+        """Initialize the coordinator."""
         self.runner_url = runner_url
         self.user_agent = user_agent or DEFAULT_USER_AGENT
         self._session = async_get_clientsession(hass)

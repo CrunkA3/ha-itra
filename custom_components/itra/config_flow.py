@@ -114,7 +114,7 @@ class ItraOptionsFlow(config_entries.OptionsFlow):
     """Handle ITRA options (re-configure interval and user-agent)."""
 
     def __init__(self, config_entry: config_entries.ConfigEntry) -> None:
-        """Initialise."""
+        """Initialize."""
         self._config_entry = config_entry
 
     async def async_step_init(
