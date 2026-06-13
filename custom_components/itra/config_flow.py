@@ -32,14 +32,6 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     }
 )
 
-OPTIONS_SCHEMA = vol.Schema(
-    {
-        vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(
-            int, vol.Range(min=MIN_UPDATE_INTERVAL)
-        ),
-        vol.Optional(CONF_USER_AGENT, default=""): str,
-    }
-)
 
 
 def _validate_runner_url(url: str) -> bool:
