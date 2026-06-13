@@ -1,0 +1,12 @@
+{
+  "domain": "itra",
+  "name": "ITRA",
+  "version": "1.0.0",
+  "codeowners": ["@CrunkA3"],
+  "config_flow": true,
+  "documentation": "https://github.com/CrunkA3/ha-itra",
+  "homeassistant": "2023.1.0",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/CrunkA3/ha-itra/issues",
+  "requirements": ["beautifulsoup4==4.12.3"]
+}

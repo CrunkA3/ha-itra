@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ITRA Runner Setup",
+        "description": "Enter the public ITRA RunnerSpace profile URL and polling interval.",
+        "data": {
+          "runner_url": "Runner URL",
+          "update_interval": "Update interval (seconds)",
+          "user_agent": "User-Agent (optional)"
+        },
+        "data_description": {
+          "runner_url": "Full URL to the ITRA RunnerSpace profile, e.g. https://itra.run/RunnerSpace/username.123",
+          "update_interval": "How often to poll the ITRA page (minimum 10800 s = 3 h, default 14400 s = 4 h).",
+          "user_agent": "Custom HTTP User-Agent header. Leave empty to use the default."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "URL must start with https://itra.run/RunnerSpace/",
+      "cannot_connect": "Unable to reach the ITRA page. Check the URL and your network connection.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This ITRA runner is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ITRA Options",
+        "data": {
+          "update_interval": "Update interval (seconds)",
+          "user_agent": "User-Agent (optional)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "itra_level_count": {
+        "name": "ITRA index"
+      },
+      "itra_performance_level": {
+        "name": "Performance level"
+      }
+    }
+  }
+}
