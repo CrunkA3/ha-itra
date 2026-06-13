@@ -98,9 +98,9 @@ class ItraLevelCountSensor(_ItraBaseSensor):
         return self.coordinator.data.get("level_count")
 
     @property
-    def state_class(self) -> str:
+    def state_class(self) -> SensorStateClass | None:
         """Return the state class."""
-        return "measurement"
+        return SensorStateClass.MEASUREMENT
 
 
 class ItraPerformanceLevelSensor(_ItraBaseSensor):
